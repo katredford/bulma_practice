@@ -8,249 +8,44 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+  <style>
 
-<style>
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
+.is-paddingless-horizontal { padding-left: 0; padding-right: 0; }
 
+
+.grid {
+	display: grid;
+	grid-template-columns: 
+    [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+}
+
+.grid * { grid-column: md; }
+.grid-xl { grid-column: xl; }
+
+  </style>
 </head>
 
 <body>
-  <!-- .hero -->
-  <section class="hero  has-background-warning">
-    <div class="hero-body">
-      <div class="container">
-        <figure class="image center">
-          <img src="images/IMG_0942.JPG" style="max-width: 205px;">
-        </figure>
-      </div>
+
+  <!-- .section -->
+  <section class="section is-paddingless-horizontal">
+    <div class="container grid">
+
+      <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">
+              Home
+            </a></li>
+          <li class="is-active"><a href="#" aria-current="page">
+              welcome to the blog
+            </a></li>
+        </ul>
+      </nav>
+
     </div>
   </section>
-<!-- /.hero -->
+  <!-- /.section -->
 
-    <!-- top.section -->
-    <section class="section has-background-light">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            <article class="media notification is-black">
-              <figure class="media-left">
-                <span class="icon is-medium">
-                  
-                <i class="fas fa-2x fa-upload"></i>
-                <!-- <i class="fas fa-2x fa-star"></i>
-                <i class="fas fa-2x fa-rocket"></i>
-                <i class="fas fa-2x fa-plug"></i>
-
-                <i class="fas fa-2x fa-magic"></i>
-                <i class="fas fa-2x fa-fighter-jet"></i> -->
-                  <!-- fa-2x -->
-                </span>
-              </figure>
-              <div class="media-content">
-              <h1 class="title is-size-4">Title</h1>
-              <p class="is-size-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-          </article>
-          
-            <div class="column">
-              <article class="media notification is-black">
-                <figure class="media-left">
-                  <span class="icon is-medium">
-                    <i class="fas fa-2x fa-star"></i>
-                  </span>
-                </figure>
-                <div class="media-content">
-                  <h1 class="title is-size-4">Title</h1>
-                  <p class="is-size-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                  </p>
-                </div>
-            </div>
-            </article>
-
-            <div class="column">
-              <article class="media notification is-black">
-                <figure class="media-left">
-                  <span class="icon is-medium">
-                    <i class="fas fa-2x fa-fighter-jet"></i>
-                  </span>
-                </figure>
-                <div class="media-content">
-                  <h1 class="title is-size-4">Title</h1>
-                  <p class="is-size-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                  </p>
-                </div>
-            </div>
-            </article>
-        </div>
-      </div>
-      </div>
-    </section>
-    <!-- top.section -->
-
-    <!-- 2.section -->
-    <section class="section has-background-light">
-      <div class="container">
-        <div class="columns is-multiline">
-          <div class="column is-one-third">
-            <article class="media notification has-background-light">
-              <figure class="media-left">
-                <span class="icon has-text-warning">
-    
-                  <i class="fas fa-lg fa-upload"></i>
-                  <!-- <i class="fas fa-2x fa-star"></i>
-                    <i class="fas fa-2x fa-rocket"></i>
-                    <i class="fas fa-2x fa-plug"></i>
-    
-                    <i class="fas fa-2x fa-magic"></i>
-                    <i class="fas fa-2x fa-fighter-jet"></i> -->
-                  <!-- fa-2x -->
-                </span>
-              </figure>
-              <div class="media-content">
-                <h1 class="title is-size-4">Title</h1>
-                <p class="subtitle is-size-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-              </div>
-          </div>
-          </article>
-    
-          <div class="column is-one-third">
-            <article class="media notification has-background-light">
-              <figure class="media-left">
-                <span class="icon has-text-danger">
-            
-                  <i class="fas fa-lg fa-star"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <h1 class="title is-size-4">Title</h1>
-                <p class="is-size-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore
-                  magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-              </div>
-          </div>
-          </article>
-    
-          <div class="column is-one-third">
-            <article class="media notification has-background-light">
-              <figure class="media-left">
-                <span class="icon has-text-info">
-            
-                  <i class="fas fa-lg fa-fighter-jet"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <h1 class="title is-size-4">Title</h1>
-                <p class="is-size-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore
-                  magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-              </div>
-          </div>
-
-              <div class="column is-one-third">
-                <article class="media notification has-background-light">
-                  <figure class="media-left">
-                    <span class="icon has-text-success">
-                
-                      <i class="fas fa-lg fa-upload"></i>
-                      <!-- <i class="fas fa-2x fa-star"></i>
-                                  <i class="fas fa-2x fa-rocket"></i>
-                                  <i class="fas fa-2x fa-plug"></i>
-                  
-                                  <i class="fas fa-2x fa-magic"></i>
-                                  <i class="fas fa-2x fa-fighter-jet"></i> -->
-                      <!-- fa-2x -->
-                    </span>
-                  </figure>
-                  <div class="media-content">
-                    <h1 class="title is-size-4">Title</h1>
-                    <p class="is-size-5">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                      dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.
-                    </p>
-                  </div>
-              </div>
-              </article>
-              
-              <div class="column is-one-third">
-                <article class="media notification has-background-light">
-                  <figure class="media-left">
-                    <span class="icon has-text-info">
-                
-                      <i class="fas fa-lg fa-star"></i>
-                    </span>
-                  </figure>
-                  <div class="media-content">
-                    <h1 class="title is-size-4">Title</h1>
-                    <p class="is-size-5">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                      dolore
-                      magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.
-                    </p>
-                  </div>
-              </div>
-              </article>
-              
-              <div class="column is-one-third">
-              <article class="media notification has-background-light">
-                <figure class="media-left">
-                  <span class="icon has-text-danger">
-              
-                    <i class="fas fa-lg fa-fighter-jet"></i>
-                    </span>
-                  </figure>
-                  <div class="media-content">
-                    <h1 class="title is-size-4">Title</h1>
-                    <p class="is-size-5">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                      dolore
-                      magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.
-                    </p>
-                  </div>
-              </div>
-          </article>
-        </div>
-      </div>
-      </div>
-    </section>
-    <!-- 2.section -->
-
-  
 </body>
 
 </html>
